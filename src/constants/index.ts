@@ -1,0 +1,3 @@
+const CONTACTS_KEY = 'SAVED_CONTACTS';
+
+export {CONTACTS_KEY};
