@@ -1,6 +1,5 @@
 import React from 'react';
 import type {ReactNode} from 'react';
-import {View} from 'react-native';
 
 import styled from 'styled-components/native';
 import type {DefaultTheme} from 'styled-components/native';
@@ -19,7 +18,7 @@ export interface FlexProps
   color?: keyof DefaultTheme['colors'];
 }
 
-const Flex = styled(View)<FlexProps>`
+const Flex = styled.View<FlexProps>`
   ${layout}
   ${margin}
   ${flexbox}

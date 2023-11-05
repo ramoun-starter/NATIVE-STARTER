@@ -1,5 +1,4 @@
 import type {ReactNode} from 'react';
-import {View} from 'react-native';
 
 import type {DefaultTheme} from 'styled-components/native';
 import styled from 'styled-components/native';
@@ -39,7 +38,7 @@ export interface BoxProps
   color?: keyof DefaultTheme['colors'];
 }
 
-const Box = styled(View)<BoxProps>`
+const Box = styled.View<BoxProps>`
   ${layout}
   ${margin}
   ${color}

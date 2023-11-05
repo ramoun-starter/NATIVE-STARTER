@@ -1,5 +1,3 @@
-import {Text} from 'react-native';
-
 import type {DefaultTheme} from 'styled-components/native';
 import styled from 'styled-components/native';
 import type {LayoutProps, TypographyProps} from 'styled-system';
@@ -12,7 +10,7 @@ export interface TypographyStyleProps {
   color?: keyof DefaultTheme['colors'] | string;
 }
 
-const Typography = styled(Text)<TypographyProps & LayoutProps & TypographyStyleProps>`
+const Typography = styled.Text<TypographyProps & LayoutProps & TypographyStyleProps>`
   ${typography};
   ${layout};
   ${textStyle};
